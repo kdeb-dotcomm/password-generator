@@ -28,5 +28,13 @@ function reset(){
     secondPassword_El.textContent = password_2
 }
 
+firstPassword_El.addEventListener("click", function() {
+    navigator.clipboard.writeText(firstPassword_El.textContent)
+    // alert("First password copied to clipboard!");
+});
 
+secondPassword_El.addEventListener("click", function() {
+    navigator.clipboard.writeText(secondPassword_El.textContent)
+    // alert("Second password copied to clipboard!");
+});
 
